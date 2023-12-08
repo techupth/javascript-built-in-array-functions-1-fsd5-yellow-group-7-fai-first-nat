@@ -8,6 +8,7 @@ const todos = [
 
 function getCompletedTodo(todos) {
   // Start coding here
+  return todos.filter((todo) => todo.completed);
 }
 
 getCompletedTodo(todos);
@@ -20,3 +21,6 @@ getCompletedTodo(todos);
 	  { topic: 'Clean the room', completed: true }
 	]
 */
+
+const resultComplete = getCompletedTodo(todos);
+console.log(resultComplete);
